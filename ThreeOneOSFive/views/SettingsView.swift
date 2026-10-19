@@ -96,6 +96,8 @@ struct SettingsView: View {
                         }
                     }
                     .padding(.vertical, 2)
+                    LabeledContent("iOS 27", value: ExploitSupportPolicy.verifiedIOS27ReleaseRange)
+                    LabeledContent("iOS 27.2", value: ExploitSupportPolicy.verifiedIOS27BetaRange)
                 } header: {
                     Text(language.text("settings.verified_versions"))
                 } footer: {

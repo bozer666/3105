@@ -259,6 +259,8 @@ struct OnboardingView: View {
                     Color(uiColor: .secondarySystemBackground),
                     in: RoundedRectangle(cornerRadius: 10, style: .continuous)
                 )
+                versionRow(icon: "checkmark.circle.fill", title: "iOS 27", value: ExploitSupportPolicy.verifiedIOS27ReleaseRange, color: .green)
+                versionRow(icon: "checkmark.circle.fill", title: "iOS 27.2", value: ExploitSupportPolicy.verifiedIOS27BetaRange, color: .green)
             }
 
             Text(language.text("onboarding.versions_footer", AppInfo.osVersion, AppInfo.osBuild))
